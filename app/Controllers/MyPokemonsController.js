@@ -1,5 +1,5 @@
 
 
-export default class MyPokemonsController{
-    constructor()
-}
+// export default class MyPokemonsController{
+//     constructor()
+// }

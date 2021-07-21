@@ -12,7 +12,7 @@ export default class Pokemon {
         return`
          <div class="col mx-5 p-5">
             <div class="card mt-5" style="width: 50vh;">
-                <img class="" src="//place-hold.it/400" alt="${this.name}">
+                <img class="" src="${this.img}" alt="${this.name}">
                 <div class="card-body">
                     <h3 class="card-title display-flex text-center">${this.name}</h3>
                     <span class="card-text">
