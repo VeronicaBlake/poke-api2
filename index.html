@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style/main.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <link rel="stylesheet" href="assets/style/main.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>poke-api2</title>
 </head>
@@ -16,20 +17,59 @@
     <header>
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">poke-api2</span>
+                <span class="iconify" data-icon="mdi-pokeball" data-inline="false"></span>
+                <span class="mx-0">Veronica's Pokedex</span>
+                <span class="iconify" data-icon="mdi-pokeball" data-inline="false"></span>
             </a>
         </nav>
     </header>
-    <main class="container">
-        <div id="app"></div>
+    <main class="container-fluid">
+        <div class="row filled" id="app">
+            <div class="col-5">
+                <div id="all-pokemon" class="row flex-column halfFilled bg-success"> 
+                    <div class="col-4">
+                        <h1>All Pokemans</h1>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="my-pokemon" class="row halfFilled flex-column bg-danger">
+                    <div class="col-4">
+                        <h1>My Pokemans</h1>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                            <li>pokeman name</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="active-pokemon" class="col bg-primary">
+               
+            </div>
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
-            <p><small>Made with love by Codeworks</small></p>
+            <p><small>Made with 💖 by Veronica</small></p>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 

@@ -1,1 +1,9 @@
 /* BASIC STYLES HERE */
+
+.filled {
+  min-height: 100vh;
+}
+
+.halfFilled {
+  min-height: 50vh;
+}
