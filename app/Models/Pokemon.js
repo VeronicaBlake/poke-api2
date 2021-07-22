@@ -2,12 +2,13 @@
 export default class Pokemon {
     constructor({ name, sprites, weight, height, types}){
         this.name = name,
-        //we refer to it as image, and it's sprites in the API
+        //we refer to it as img, and it's sprites in the API
         this.img = sprites.other.dream_world.front_default
         this.weight = weight, 
         this.height = height, 
         this.types = types
 
+        //this is to resolve the way the data was put in to the sandbox
         if (typeof this.types[0] != 'string'){
            this.types = this.types.map(elem => elem.type.name)
         }
