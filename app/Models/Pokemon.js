@@ -1,11 +1,16 @@
 
 export default class Pokemon {
-    constructor({ name, img, weight, height, types}){
+    constructor({ name, sprites, weight, height, types}){
         this.name = name,
-        this.img = img || 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${this.id}.svg', 
+        //we refer to it as image, and it's sprites in the API
+        this.img = sprites.other.dream_world.front_default
         this.weight = weight, 
         this.height = height, 
         this.types = types
+
+        if (typeof this.types[0] != 'string'){
+           this.types = this.types.map(elem => elem.type.name)
+        }
     }
 
     get Template(){
